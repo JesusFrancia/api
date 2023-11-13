@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS moneda;
+CREATE TABLE moneda (
+id INT AUTO_INCREMENT  PRIMARY KEY,
+monto DECIMAL(12,2),
+origen Integer,
+destino Integer
+);
+
+DROP TABLE IF EXISTS tipo;
+CREATE TABLE tipo (
+id INT AUTO_INCREMENT  PRIMARY KEY,
+nombreMoneda VARCHAR(50),
+tipoCambio DECIMAL(12,2)
+);
