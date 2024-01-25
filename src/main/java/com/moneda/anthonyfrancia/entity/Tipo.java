@@ -5,11 +5,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.Data;
+import lombok.*;
 
 @Entity
 @Table(name = "tipo")
 @Data
+@Getter
+@Setter
 public class Tipo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
